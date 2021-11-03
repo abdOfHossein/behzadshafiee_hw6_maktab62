@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="T1.7.css" </head>
+
+<body>
+    <form action="###">
+        <div class="main">
+            <input required type="text" placeholder="userName" id="userName" class="styleInputForm">
+            <p id="p1"></p>
+            <input required type="password" placeholder="passWord" id="pass" class="styleInputForm">
+            <p id="p2"></p>
+            <input required type="password" placeholder="checkingPassword" id="checkPass" class="styleInputForm">
+            <p id="p3"></p>
+            <p id="p4"></p>
+            <button onclick="checkingFill()" id="button" class="btn">Send</button>
+        </div>
+    </form>
+
+
+</body>
+<script>
+    function checkingFill() {
+        let countainerNum=0;
+        let countainerStr=0;
+        var userName = document.getElementById("userName").value;
+        var pass = document.getElementById("pass").value;
+        let tmp=pass;
+        var checkPass = document.getElementById("checkPass").value;
+        if (userName === "") {
+            document.getElementById("p1").innerHTML = "necessary";
+
+
+        }
+        else if (pass === "") {
+            document.getElementById("p2").innerHTML = "necessary";
+        }
+        else if (checkPass === "") {
+            document.getElementById("p3").innerHTML = "necessary";
+        }
+        else if (pass !== checkPass) {
+            document.getElementById("p3").innerHTML = "pass in not equal with checkPass"
+        }
+        
+        else if (pass === checkPass) {
+            for (let i=0;i++;i<tmp.length) {
+                document.write(typeof pass[i]);
+                if (typeof pass[i] === 'number') {
+                    countainerNum++;
+                    console.log(countainerNum);
+                }
+                if (typeof pass[i] === 'string') {
+                    countainerNum++;
+                }
+            }
+            if(countainerNum===0 || countainerStr===0){
+                document.getElementById("p4").innerHTML="pass at least must have a number & a character";
+            }
+        }
+
+    }
+
+</script>
+
+</html>

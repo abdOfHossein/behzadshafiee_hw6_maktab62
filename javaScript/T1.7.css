@@ -1,0 +1,15 @@
+.styleInputForm {
+    width: 250px;
+    height: 30px;
+    display: block;
+    margin-top: 10px;
+}
+
+.btn{
+    margin-top: 10px;
+    width: 50px;
+}
+.main {
+    width: 300px;
+    margin: 100px auto 0;
+}

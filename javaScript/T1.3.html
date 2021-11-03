@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="T1.3.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="div1">
+        <p id="p1">parent's node text</p>
+        <div id="div2">
+            <p id="p2">The target node </p>
+            <div id="div3">
+                <p id="p3">The main node's child node</p>
+            </div>
+        </div>
+    </div>
+    <button id="btn1" onclick="copyChildText()">copyChildText</button>
+    <button id="btn2" onclick="copyParentText()">copyParentText</button>
+</body>
+<script>
+    function copyChildText() {
+        document.getElementById("p2").innerHTML = document.getElementById('p3').innerHTML + document.getElementById("p3").innerHTML;
+        return;
+    }
+
+    function copyParentText() {
+        document.getElementById("p2").innerHTML = document.getElementById('p3').innerHTML + document.getElementById("p2").innerHTML + document.getElementById("p1").innerHTML;
+        return;
+    }
+</script>
+
+</html>

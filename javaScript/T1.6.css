@@ -1,0 +1,23 @@
+#redSquare {
+    width: 150px;
+    height: 150px;
+    background-color:red;
+    display: inline-block;
+    margin: 100px 40px;
+}
+
+#blackSquare {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    display: inline-block;
+    margin: 100px 100px;
+}
+
+#circle{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgb(80, 101, 199);
+}

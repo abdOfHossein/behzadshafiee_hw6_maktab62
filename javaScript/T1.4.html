@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+<script>
+    let div = document.createElement("div");
+    div.style.border = "1px solid black";
+    div.style.width = '300px';
+    div.style.height = '300px';
+    div.style.margin = "100px auto 0";
+    let title = document.createElement("p");
+    title.innerHTML = "<h2>My TAsks</h2>";
+    title.style.color = 'red';
+    title.style.paddingLeft = "10px";
+    let ol =document.createElement("OL");
+    ol.type="i";
+    ol.innerHTML="<li>userdashboard</li><li>admineDashboard</li><li>authenrtication<ul type='circle'><li>login</li><li style='text-decoration: line-through';>register</li><li>logout</li></ul></li><li>aboutPage</li><li style='text-decoration: line-through';>oonteelPage</li>";
+    div.appendChild(title);
+    div.appendChild(ol);
+    let input=document.createElement("input");
+    input.type="text";
+    input.style.marginLeft="5px";
+    let button=document.createElement("button");
+    button.innerHTML="add tasks";
+    button.style.width="80px";
+    button.style.height="20px";
+    button.style.marginLeft="7px"
+    div.appendChild(input);
+    div.appendChild(button);
+    let body = document.body;
+    body.appendChild(div);
+
+</script>
+
+</html>
